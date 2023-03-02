@@ -1,11 +1,13 @@
-import React from 'react'
-import Karavanlar1 from './Components/Karavanlar1';
+import React, { useEffect } from 'react'
+import KaravanlarOpacity from './Components/KaravanlarOpacity';
+import KaravanlarAsagidanYukari from './Components/KaravanlarAsagidanYukari';
 import { karavanlar } from './karavandata';
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import Navbar from './Components/Navbar';
 import resim from './resim.jpg'
 
 function App() {
+
   return (
     <div className='w-[100%]'>
 
@@ -20,11 +22,39 @@ function App() {
         </ParallaxBanner>
 
         <div className='w-100 bg-white'>
-          {karavanlar.map(karavan => {
-            return <Karavanlar1 karavanImage={karavan} />
+        {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
           })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarAsagidanYukari karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarAsagidanYukari karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarAsagidanYukari karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarAsagidanYukari karavanImage={karavan} />
+          })}
+
         </div>
       </div>
+
+
     </div>
   );
 }
