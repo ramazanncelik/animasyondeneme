@@ -8,18 +8,16 @@ function Karavanlar1({ karavanImage }) {
             viewport={{ once: true, }} variants={{
                 offscreen: {
                     opacity: 0,
-                    y:50
                 },
                 onscreen: {
                     opacity: 1,
-                    y:50,
                     transition: {
                         type: "spring",
                         duration: 3
                     }
                 }
             }}
-            style={{ width: '48%', float: 'left' }} className="bg-white d-grid gap-2 m-1">
+            style={{ width: '48%', float: 'left' }} className="bg-white d-grid gap-2 m-1 p-3">
 
             <div className="w-100 d-flex justify-content-center align-items-center">
                 <img src={karavanImage} style={{ width: 200, height: 200 }} alt={karavanImage} />

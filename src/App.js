@@ -9,20 +9,53 @@ import resim from './resim.jpg'
 function App() {
 
   return (
-    <div className='w-[100%]'>
+    <div className='w-100' >
 
       <Navbar />
 
-      <div>
-        <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
-          <ParallaxBannerLayer image={resim} speed={-35} className='d-flex align-items-center justify-content-center' />
+      <div className='mt-5'>
+
+        <div className='w-100 bg-white'>
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+          {karavanlar.map(karavan => {
+            return <KaravanlarOpacity karavanImage={karavan} />
+          })}
+
+        </div>
+
+        <ParallaxBanner style={{ aspectRatio: '3 / 1' }}>
+          <ParallaxBannerLayer image={resim} speed={-50} className='d-flex align-items-center justify-content-center' />
           <ParallaxBannerLayer className='w-100 text-white h-100 d-flex align-items-center justify-content-center'>
             <h1>My Headline</h1>
           </ParallaxBannerLayer>
         </ParallaxBanner>
 
         <div className='w-100 bg-white'>
-        {karavanlar.map(karavan => {
+          {karavanlar.map(karavan => {
             return <KaravanlarOpacity karavanImage={karavan} />
           })}
 

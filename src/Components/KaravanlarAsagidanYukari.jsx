@@ -11,11 +11,10 @@ function KaravanlarAsagidanYukari({ karavanImage }) {
                     opacity:0
                 },
                 onscreen: {
-                    y: 50,
+                    y: 0,
                     opacity:1,
                     transition: {
                         type: "spring",
-                        bounce: 0.4,
                         duration: 1.5
                     }
                 }
